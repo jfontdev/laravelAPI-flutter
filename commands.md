@@ -18,3 +18,7 @@
 - php artisan make:controller Api/CategoryController --resource --api --model=Category
   (Create the Category controller with 5 methods)
   https://laravel.com/docs/10.x/controllers#resource-controllers
+
+- php artisan make:resource CategoryResource
+  (Make a resource to do dataWrapping on all methods of a controller)
+https://laravel.com/docs/10.x/eloquent-resources#main-content
