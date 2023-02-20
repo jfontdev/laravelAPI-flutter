@@ -29,9 +29,9 @@ class CategoryController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Category $category): Response
+    public function show(Category $category): CategoryResource
     {
-        //
+        return new CategoryResource($category);
     }
 
     /**
