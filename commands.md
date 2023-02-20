@@ -22,3 +22,6 @@
 - php artisan make:resource CategoryResource
   (Make a resource to do dataWrapping on all methods of a controller)
 https://laravel.com/docs/10.x/eloquent-resources#main-content
+
+- php artisan make:request StoreCategoryRequest
+  (Add validation with required fields)
