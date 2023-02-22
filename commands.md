@@ -25,3 +25,17 @@ https://laravel.com/docs/10.x/eloquent-resources#main-content
 
 - php artisan make:request StoreCategoryRequest
   (Add validation with required fields)
+
+## Transactions - Model and migrations
+
+- php artisan make:model Transaction -m
+  (make the model and migration for Transaction table)
+
+- php artisan make:controller Api/TransactionController --resource --api --model=Transaction
+  (Create the Transaction controller with 5 methods)
+
+- php artisan migrate
+  (do the migration to the database)
+
+- php artisan make:resource TransactionResource
+  (Make a resource to do dataWrapping on all methods of a controller)
