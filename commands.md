@@ -39,3 +39,6 @@ https://laravel.com/docs/10.x/eloquent-resources#main-content
 
 - php artisan make:resource TransactionResource
   (Make a resource to do dataWrapping on all methods of a controller)
+
+- php artisan make:request StoreTransactionRequest
+  (Add validation with required fields)
