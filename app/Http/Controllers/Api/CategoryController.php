@@ -38,9 +38,11 @@ class CategoryController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Category $category): Response
+    public function update(StoreCategoryRequest $request, Category $category): CategoryResource
     {
-        //
+        $category->update($request->validated());
+
+        return new CategoryResource($category);
     }
 
     /**
@@ -48,6 +50,8 @@ class CategoryController extends Controller
      */
     public function destroy(Category $category): Response
     {
-        //
+        $category->delete();
+
+        return response()->noContent();
     }
 }
