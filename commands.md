@@ -42,3 +42,17 @@ https://laravel.com/docs/10.x/eloquent-resources#main-content
 
 - php artisan make:request StoreTransactionRequest
   (Add validation with required fields)
+
+## User - authentication
+
+- php artisan tinker => User:create(['email' => 'admin@admin', 'password' => bcrypt('123456'), 'name' => 'Admin'])
+  ```
+  App\Models\User {#4684
+    email: "admin@admin",
+    #password: "$2y$10$i/ft1oHcCV/HYIqRWwx2LOD1353zDePZDHBeIc5JdvvdFzV3KiRwm",
+    name: "Admin",
+    updated_at: "2023-02-22 11:02:30",
+    created_at: "2023-02-22 11:02:30",
+    id: 1,
+  }
+  ```
